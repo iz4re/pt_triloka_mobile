@@ -20,7 +20,6 @@ class _LoginScreenState extends State<LoginScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Hanya "Welcome!" yang rata kiri
               const Text(
                 "Welcome!",
                 style: TextStyle(
@@ -32,11 +31,9 @@ class _LoginScreenState extends State<LoginScreen> {
 
               const SizedBox(height: 120),
 
-              // Mulai konten di tengah
               Center(
                 child: Column(
                   children: [
-                    // Tab Switch Login / SignUp
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -94,14 +91,12 @@ class _LoginScreenState extends State<LoginScreen> {
 
                     const SizedBox(height: 40),
 
-                    // Input Fields
                     if (!isLogin) _buildTextField("First Name", false),
                     _buildTextField("Enter Your Email", false),
                     _buildTextField("Enter Your Password", true),
 
                     const SizedBox(height: 30),
 
-                    // Tombol utama
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
