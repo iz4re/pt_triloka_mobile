@@ -15,7 +15,6 @@ class DashboardScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // ✅ HEADER (avatar sudah bisa diklik)
               Row(
                 children: [
                   // Logo
